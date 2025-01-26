@@ -3,7 +3,7 @@ var up, down, left, right, active, vel_h, vel_v, magic, restart;
 
 //V de colisao com objetos parede
 col = collision_rectangle(x - 10, y - 10, x + 10, y + 10, obj_box, false, true);
-//teste
+
 up = keyboard_check(ord("W"));
 down = keyboard_check(ord("S"));
 left = keyboard_check(ord("A"));
@@ -12,10 +12,8 @@ active = keyboard_check(vk_space);
 magic = keyboard_check_pressed(ord("R"));
 restart = keyboard_check_pressed(vk_enter);
 
-//Configurando a profundidade
 depth = - (y + sprite_height);
 
-//Controlando algumas variaveis do jogador
 #region Relógio
 if(stop == false){
 	segundos -= .01;
