@@ -1,7 +1,6 @@
 //Iniciando as variaveis
 var up, down, left, right, active, vel_h, vel_v, magic, restart;
 
-//V de colisao com objetos parede
 col = collision_rectangle(x - 10, y - 10, x + 10, y + 10, obj_box, false, true);
 
 up = keyboard_check(ord("W"));
